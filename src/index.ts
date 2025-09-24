@@ -4,7 +4,7 @@ import type { Request, Response } from "express";
 const app = express();
 
 app.get("/", (req: Request, res: Response): void => {
-         res.send("Hello Client")
+  res.send("Hello Client")
 });
 
 app.listen(8080, (): void =>
