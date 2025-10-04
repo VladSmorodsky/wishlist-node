@@ -19,5 +19,3 @@ app.get("/", (req: Request, res: Response): void => {
 });
 
 export { app };
-
-

@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { signUp, login, logout } from "../controllers/auth.controller";
-import {validateUserCreation} from '../validations/create.user'
+import { validateUserCreation } from "../validations/create.user";
 
 const router = Router();
 
