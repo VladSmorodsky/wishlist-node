@@ -20,7 +20,7 @@ describe("Auth Controller", () => {
       });
       // console.dir(response, { depth: null, colors: true });
       expect(response.status).toBe(400);
-      const body = response!._body;
+      const body = response.body;
       expect(body).toHaveProperty("errors");
     });
 
@@ -32,7 +32,7 @@ describe("Auth Controller", () => {
         passwordConfirmation: "Password123",
       });
       expect(response.status).toBe(201);
-      const body = response!._body;
+      const body = response.body;
       expect(body).toHaveProperty("message", "User signed up successfully");
       expect(body).toHaveProperty("user");
       expect(body.user).toHaveProperty("id");
