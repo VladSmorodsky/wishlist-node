@@ -18,7 +18,7 @@ describe("Auth Controller", () => {
         email: "",
         password: "password123",
       });
-      
+
       expect(response.status).toBe(400);
       const body = response.body;
       expect(body).toHaveProperty("error");

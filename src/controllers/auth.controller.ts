@@ -11,7 +11,6 @@ export const signUp = catchAsync(
     const errors = validationResult(req);
 
     if (errors && !errors.isEmpty()) {
-
       throw new RequestBodyValidationError(errors.array()[0]);
     }
 
