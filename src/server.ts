@@ -5,7 +5,6 @@ dotenv.config();
 
 const MONGODB_URI = process.env.MONGODB_URI || "";
 
-// app.listen(8090, (): void => console.log("Server is listening to http://localhost:8089"));
 dbConnect(MONGODB_URI)
   .then(() => {
     console.log("Database connected successfully");
